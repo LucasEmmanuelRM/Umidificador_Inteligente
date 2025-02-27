@@ -181,7 +181,7 @@ void ssd1306_draw_char(ssd1306_t *ssd, char c, uint8_t x, uint8_t y)
   }else if (c == ':')
   {
     index = (c - ':' + 64) * 8; // Para dois pontos
-  }else if (c == ':')
+  }else if (c == '%')
   {
     index = (c - '%' + 65) * 8; // Para percento
   }else  if (c >= '0' && c <= '9')
